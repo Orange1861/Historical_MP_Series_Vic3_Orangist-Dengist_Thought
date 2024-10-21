@@ -57,7 +57,7 @@
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_saw_mills"  "pm_no_equipment" "pm_road_carts"  }
+				activate_production_methods={ "pm_saw_mills" "pm_no_hardwood" "pm_no_equipment" "pm_road_carts"  }
 			}
 			create_building={
 				building="building_opium_plantation"
@@ -109,7 +109,7 @@
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_saw_mills"  "pm_no_equipment" "pm_road_carts"  }
+				activate_production_methods={ "pm_saw_mills" "pm_no_hardwood" "pm_no_equipment" "pm_road_carts"  }
 			}
 			create_building={
 				building="building_tea_plantation"
@@ -136,19 +136,6 @@
 				}
 				reserves=1
 				activate_production_methods={ "default_building_opium_plantation" "pm_road_carts"  }
-			}
-			create_building={
-				building="building_hardwood_forestry"
-				add_ownership={
-					building={
-						type="building_hardwood_forestry"
-						country="c:CHI"
-						levels=2
-						region="STATE_YUNNAN"
-					}
-				}
-				reserves=1
-				activate_production_methods={ "pm_hardwood_saw_mills"  "pm_no_equipment" "pm_road_carts"  }
 			}
 			create_building={
 				building="building_gold_mine"
@@ -213,7 +200,7 @@
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_saw_mills"  "pm_no_equipment" "pm_road_carts"  }
+				activate_production_methods={ "pm_saw_mills"  "pm_no_equipment" "pm_road_carts" "pm_hardwood" }
 			}
 			create_building={
 				building="building_opium_plantation"
@@ -253,19 +240,6 @@
 				}
 				reserves=1
 				activate_production_methods={ "default_building_tea_plantation" "pm_road_carts"  }
-			}
-			create_building={
-				building="building_hardwood_forestry"
-				add_ownership={
-					building={
-						type="building_hardwood_forestry"
-						country="c:CHI"
-						levels=2
-						region="STATE_GUIZHOU"
-					}
-				}
-				reserves=1
-				activate_production_methods={ "pm_hardwood_saw_mills"  "pm_no_equipment" "pm_road_carts"  }
 			}
 		}
 	}
@@ -433,19 +407,6 @@
 				reserves=1
 				activate_production_methods={ "default_building_silk_plantation" "pm_road_carts"  }
 			}
-			create_building={
-				building="building_hardwood_forestry"
-				add_ownership={
-					building={
-						type="building_hardwood_forestry"
-						country="c:CHI"
-						levels=16
-						region="STATE_GUANGXI"
-					}
-				}
-				reserves=1
-				activate_production_methods={ "pm_hardwood_saw_mills"  "pm_no_equipment" "pm_road_carts"  }
-			}
 		}
 	}
 	s:STATE_BEIJING={
@@ -523,19 +484,6 @@
 				activate_production_methods={ "default_building_tea_plantation" "pm_road_carts"  }
 			}
 			create_building={
-				building="building_logging_camp"
-				add_ownership={
-					building={
-						type="building_logging_camp"
-						country="c:CHI"
-						levels=2
-						region="STATE_BEIJING"
-					}
-				}
-				reserves=1
-				activate_production_methods={ "pm_saw_mills"  "pm_no_equipment" "pm_road_carts"  }
-			}
-			create_building={
 				building="building_forbidden_city"
 				level=1
 			}
@@ -597,7 +545,7 @@
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_saw_mills"  "pm_no_equipment" "pm_road_carts"  }
+				activate_production_methods={ "pm_saw_mills"  "pm_no_equipment" "pm_road_carts" "pm_hardwood" }
 			}
 			create_building={
 				building="building_livestock_ranch"
@@ -627,7 +575,7 @@
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_saw_mills"  "pm_no_equipment" "pm_road_carts"  }
+				activate_production_methods={ "pm_saw_mills"  "pm_no_equipment" "pm_road_carts" "pm_hardwood" }
 			}
 			create_building={
 				building="building_livestock_ranch"
@@ -913,19 +861,6 @@
 				}
 				reserves=1
 				activate_production_methods={ "pm_basic_port" }
-			}
-			create_building={
-				building="building_hardwood_forestry"
-				add_ownership={
-					building={
-						type="building_hardwood_forestry"
-						country="c:CHI"
-						levels=2
-						region="STATE_GUANGDONG"
-					}
-				}
-				reserves=1
-				activate_production_methods={ "pm_hardwood_saw_mills"  "pm_no_equipment" "pm_road_carts"  }
 			}
 		}
 		region_state:POR={
@@ -1611,7 +1546,7 @@
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_saw_mills"  "pm_no_equipment" "pm_road_carts"  }
+				activate_production_methods={ "pm_saw_mills" "pm_hardwood" "pm_no_equipment" "pm_road_carts"  }
 			}
 			create_building={
 				building="building_tea_plantation"
@@ -2229,7 +2164,7 @@
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_simple_forestry"  "pm_no_equipment" "pm_road_carts"  }
+				activate_production_methods={ "pm_simple_forestry" "pm_no_hardwood" "pm_no_equipment" "pm_road_carts"  }
 			}
 			create_building={
 				building="building_barracks"
@@ -2537,7 +2472,7 @@
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_simple_forestry"  "pm_no_equipment" "pm_road_carts"  }
+				activate_production_methods={ "pm_simple_forestry" "pm_no_hardwood" "pm_no_equipment" "pm_road_carts"  }
 			}
 			create_building={
 				building="building_tobacco_plantation"
@@ -2603,6 +2538,19 @@
 				}
 				reserves=1
 				activate_production_methods={ "pm_forest_glass"  "pm_manual_glassblowing" "pm_ceramics" }
+			}
+			create_building={
+				building="building_furniture_manufacturies"
+				add_ownership={
+					building={
+						type="building_furniture_manufacturies"
+						country="c:JAP"
+						levels=2
+						region="STATE_KANTO"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_handcrafted_furniture"  "pm_automation_disabled" "pm_luxury_furniture" }
 			}
 			create_building={
 				building="building_tooling_workshops"
@@ -2744,32 +2692,6 @@
 				activate_production_methods={ "pm_pulp_pressing" "pm_automation_disabled"  }
 			}
 			create_building={
-				building="building_furniture_manufacturies"
-				add_ownership={
-					building={
-						type="building_furniture_manufacturies"
-						country="c:JAP"
-						levels=2
-						region="STATE_CHUBU"
-					}
-				}
-				reserves=1
-				activate_production_methods={ "pm_handcrafted_furniture"  "pm_automation_disabled" "pm_luxury_furniture" }
-			}
-			create_building={
-				building="building_hardwood_forestry"
-				add_ownership={
-					building={
-						type="building_hardwood_forestry"
-						country="c:JAP"
-						levels=1
-						region="STATE_CHUBU"
-					}
-				}
-				reserves=1
-				activate_production_methods={ "pm_hardwood_saw_mills"  "pm_no_equipment" "pm_road_carts"  }
-			}
-			create_building={
 				building="building_logging_camp"
 				add_ownership={
 					building={
@@ -2780,7 +2702,7 @@
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_simple_forestry"  "pm_no_equipment" "pm_road_carts"  }
+				activate_production_methods={ "pm_simple_forestry"  "pm_no_equipment" "pm_road_carts" "pm_hardwood" }
 			}
 			create_building={
 				building="building_livestock_ranch"
@@ -3179,7 +3101,7 @@
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_simple_forestry"  "pm_no_equipment" "pm_road_carts"  }
+				activate_production_methods={ "pm_simple_forestry" "pm_no_hardwood"  "pm_no_equipment" "pm_road_carts"  }
 			}
 			create_building={
 				building="building_livestock_ranch"

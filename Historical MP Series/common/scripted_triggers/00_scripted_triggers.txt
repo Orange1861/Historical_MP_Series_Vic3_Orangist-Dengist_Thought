@@ -818,7 +818,6 @@ is_production_building = {
 		is_building_type = building_lead_mine
 		is_building_type = building_sulfur_mine
 		is_building_type = building_logging_camp
-		is_building_type = building_hardwood_forestry
 		is_building_type = building_oil_rig
 		is_building_type = building_coffee_plantation
 		is_building_type = building_cotton_plantation
@@ -948,7 +947,6 @@ is_raw_industries_building = {
 		is_building_type = building_lead_mine
 		is_building_type = building_sulfur_mine
 		is_building_type = building_logging_camp
-		is_building_type = building_hardwood_forestry
 		is_building_type = building_whaling_station
 	}
 }
