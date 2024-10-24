@@ -13,7 +13,7 @@
 			NOT = { is_country_type = decentralized }
 		}
 		#NOT = { has_modifier = received_grant }
-		game_date >= 1836.1.2
+		game_date >= 1936.12.12
 	}
 	
     possible = {
