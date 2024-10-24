@@ -41,7 +41,7 @@ company_ccci = {
 				}
 				any_scope_building = {
 					is_building_type = building_rubber_plantation
-					level >= 5
+					level >= 3
 				}
 			}
 		}
