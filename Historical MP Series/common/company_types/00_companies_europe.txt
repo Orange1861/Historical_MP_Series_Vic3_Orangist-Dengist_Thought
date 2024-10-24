@@ -12,25 +12,36 @@ company_ccci = {
 	}
 	
 	potential = {
-		country_has_primary_culture = cu:wallonian
+		has_interest_marker_in_region = region_congo
+	}
+
+	attainable = {
+		hidden_trigger = { # Hide attainable if it's always fulfilled by possible
+			any_scope_state = {
+				OR = {
+					state_region = s:STATE_EQUATEUR 
+					state_region = s:STATE_CONGO_ORIENTALE
+					state_region = s:STATE_KATANGA 
+					state_region = s:STATE_KASAI 
+					state_region = s:STATE_BAS_CONGO
+				}
+			}
+		}
 	}
 	
 	possible = {
 		OR = {
-			any_subject_or_below = {
-				any_scope_state = {
-					region = sr:region_congo
-					any_scope_building = {
-						is_building_type = building_rubber_plantation
-						level >= 3
-					}
-				}
-			}
 			any_scope_state = {
-				region = sr:region_congo
+				OR = {
+					state_region = s:STATE_EQUATEUR 
+					state_region = s:STATE_CONGO_ORIENTALE
+					state_region = s:STATE_KATANGA 
+					state_region = s:STATE_KASAI 
+					state_region = s:STATE_BAS_CONGO
+				}
 				any_scope_building = {
 					is_building_type = building_rubber_plantation
-					level >= 3
+					level >= 5
 				}
 			}
 		}
