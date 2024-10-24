@@ -87,11 +87,11 @@ principle_market_unification_1 = {
 	}
 
 	leader_modifier = {
-		country_leverage_generation_mult = -0.25
+		country_leverage_generation_mult = -0.4
 	}
 
 	member_modifier = {
-		country_influence_mult = -0.1
+		country_influence_mult = -0.2
 	}
 
 	power_bloc_modifier = {
