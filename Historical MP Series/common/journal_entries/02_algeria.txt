@@ -73,49 +73,30 @@ je_the_algerian_departements = {
 		}
 	}
 	complete = {
-		custom_tooltip = {
-			text = je_the_algerian_departements_tt_1
-			any_scope_state = {
-				state_region = s:STATE_ALGIERS
-				is_incorporated = yes
-				is_split_state = no
-				turmoil < 0.25
-			}
-			any_scope_state = {
-				state_region = s:STATE_ORAN
-				is_incorporated = yes
-				is_split_state = no
-				turmoil < 0.25
-			}
-			any_scope_state = {
-				state_region = s:STATE_CONSTANTINE
-				is_incorporated = yes
-				is_split_state = no
-				turmoil < 0.25
-			}
-		}
-		custom_tooltip = {
-			text = je_the_algerian_departements_tt_3
-			any_scope_state = {
-				state_region = s:STATE_ALGIERS
-				culture_percent_state = {
-					target = cu:french
-				    value >= 0.02
+		AND = {
+			custom_tooltip = {
+				text = je_the_algerian_departements_tt_1
+				any_scope_state = {
+					state_region = s:STATE_ALGIERS
+					turmoil < 0.25
+				}
+				any_scope_state = {
+					state_region = s:STATE_ORAN
+					turmoil < 0.25
+				}
+				any_scope_state = {
+					state_region = s:STATE_CONSTANTINE
+					turmoil < 0.25
 				}
 			}
 			any_scope_state = {
-				state_region = s:STATE_ORAN
-				culture_percent_state = {
-					target = cu:french
-				    value >= 0.02
+				region = sr:region_north_africa
+				any_scope_building = {
+					is_building_type = building_barracks
+					level >= 20
+					occupancy >= 0.5
 				}
-			}
-			any_scope_state = {
-				state_region = s:STATE_CONSTANTINE
-				culture_percent_state = {
-					target = cu:french
-				    value >= 0.02
-				}
+				count >= 3
 			}
 		}
 	}
