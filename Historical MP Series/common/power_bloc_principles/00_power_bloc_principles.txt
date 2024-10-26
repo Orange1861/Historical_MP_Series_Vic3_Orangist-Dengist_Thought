@@ -675,7 +675,8 @@ principle_food_standardization_1 = {
 	}
 
 	member_modifier = {
-		building_group_bg_agriculture_throughput_add = 0.1
+		state_dependent_wage_mult = 0.30
+		building_subsistence_output_mult = 0.05
 	}
 	
 	ai_weight = {
@@ -706,10 +707,8 @@ principle_food_standardization_2 = {
 
 	member_modifier = {
 		# Modifiers from previous level(s)
-		building_group_bg_agriculture_throughput_add = 0.1
-		
-		# Lower mortality
-		state_mortality_mult = -0.1
+		state_dependent_wage_mult = 0.30
+		building_subsistence_output_mult = 0.05
 	}
 	
 	ai_weight = {
@@ -723,11 +722,8 @@ principle_food_standardization_3 = {
 
 	member_modifier = {
 		# Modifiers from previous level(s)
-		building_group_bg_agriculture_throughput_add = 0.1
-		state_mortality_mult = -0.1
-		
-		# Higher SoL
-		state_standard_of_living_add = 1
+		state_dependent_wage_mult = 0.30
+		building_subsistence_output_mult = 0.05
 		
 		#Unlocks a PM for Food Industries
 	}
