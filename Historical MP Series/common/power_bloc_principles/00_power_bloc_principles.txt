@@ -364,10 +364,10 @@ principle_food_standardization_1 = {
 
 	member_modifier = {
 		#More efficient PM for vacuum canning
-		building_group_bg_agriculture_throughput_add = 0.1
+		building_group_bg_agriculture_throughput_add = 0.15
 		
 		# Higher SoL
-		state_standard_of_living_add = 1
+		state_dependent_wage_mult = 0.30
 		
 		#Unlocks a PM for Food Industries
 	}
