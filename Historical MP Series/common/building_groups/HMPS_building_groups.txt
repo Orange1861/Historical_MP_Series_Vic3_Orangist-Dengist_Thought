@@ -140,8 +140,51 @@ bg_livestock_ranches = {
 	
 	cash_reserves_max = 12500
 	
+	urbanization = 2.5
+	
 	foreign_investment_ai_factor = 0.10
 }
+
+bg_rye_farms = {
+	parent_group = bg_agriculture
+	
+	default_building = building_rye_farm
+	
+	cash_reserves_max = 25000
+	
+	urbanization = 2.5
+}
+
+bg_wheat_farms = {
+	parent_group = bg_agriculture
+	
+	default_building = building_wheat_farm
+	
+	cash_reserves_max = 25000
+	
+	urbanization = 2.5
+}
+
+bg_maize_farms = {
+	parent_group = bg_agriculture
+	
+	default_building = building_maize_farm
+	
+	cash_reserves_max = 25000
+	
+	urbanization = 2.5
+}
+
+bg_millet_farms = {
+	parent_group = bg_agriculture
+	
+	default_building = building_millet_farm
+	
+	cash_reserves_max = 25000
+	
+	urbanization = 2.5
+}
+
 
 # Rubber Plantation
 bg_rubber = {
@@ -200,7 +243,7 @@ bg_logging = {
 	
 	cash_reserves_max = 25000
 	
-	urbanization = 5
+	urbanization = 2.5
 	infrastructure_usage_per_level = 1
 	
 	should_auto_expand = { 
