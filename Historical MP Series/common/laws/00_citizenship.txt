@@ -25,7 +25,9 @@ law_ethnostate = {
 	modifier = {
 		country_authority_add = 100
 		state_radicals_from_sol_change_accepted_culture_mult = -0.2
-		state_loyalists_from_sol_change_accepted_culture_mult = 0.2			
+		state_loyalists_from_sol_change_accepted_culture_mult = 0.2		
+		state_birth_rate_mult = 0.05
+	
 	}
 	
 	possible_political_movements = {
@@ -72,7 +74,9 @@ law_national_supremacy = {
 	modifier = {
 		country_authority_add = 50
 		state_radicals_from_sol_change_accepted_culture_mult = -0.15
-		state_loyalists_from_sol_change_accepted_culture_mult = 0.15			
+		state_loyalists_from_sol_change_accepted_culture_mult = 0.15	
+		state_birth_rate_mult = 0.025
+		
 	}
 	
 	possible_political_movements = {
@@ -101,9 +105,9 @@ law_racial_segregation = {
 	
 	progressiveness = 0
 	
-	unlocking_technologies = {
-		civil_rights
-	}
+	#unlocking_technologies = {
+	#	civil_rights
+	#}
 	
 	on_enact = {
 		recalculate_pop_ig_support = yes
@@ -163,9 +167,9 @@ law_language_discrimination = {
 	
 	progressiveness = 0
 	
-	unlocking_technologies = {
-		civil_rights
-	}
+	#unlocking_technologies = {
+	#	civil_rights
+	#}
 	
 	on_enact = {
 		recalculate_pop_ig_support = yes
@@ -252,7 +256,8 @@ law_cultural_exclusion = {
 	modifier = {
 		state_radicals_from_sol_change_accepted_culture_mult = -0.05
 		state_loyalists_from_sol_change_accepted_culture_mult = 0.05
-		state_migration_pull_mult = 0.1		
+		state_migration_pull_mult = 0.1	
+		state_birth_rate_mult = -0.025	
 	}
 	
 	possible_political_movements = {
@@ -335,6 +340,7 @@ law_multicultural = {
 	modifier = {
 		state_migration_pull_mult = 0.1
 		state_radicals_from_discrimination_mult = -1
+		state_birth_rate_mult = -0.05
 	}
 	
 	possible_political_movements = {
